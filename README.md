@@ -7,7 +7,8 @@
 -   _배포 server URL : https://port-0-farminpalmserver-m1bow3hn7b1c4b46.sel4.cloudtype.app_
 
 -   _시연 영상 : https://www.youtube.com/watch?v=5rZ4y66YYeI&feature=youtu.be_
-
+   
+-   _발표 자료 : https://drive.google.com/file/d/1N1jDdtGGcb6hE-s81Zvz4sK5HJJlgJfA/view_
 <br>
 
 ## ✨ 프로젝트 소개
@@ -61,38 +62,36 @@
 <br>
 
 ## ✏️ 백엔드 기술스택
+<img src="https://img.shields.io/badge/springboot-31785F?style=for-the-badge&logo=spring-boot&logoColor=black"> 
+<img src="https://img.shields.io/badge/springsecurity-%d7da6b.svg?style=for-the-badge&logo=springsecurity&logoColor=white">
+<img src="https://img.shields.io/badge/Java-FF4154?style=for-the-badge&logo=Java&logoColor=white">
+<img src="https://img.shields.io/badge/mariadb%20Query-61DAFB?style=for-the-badge&logo=mariadb%20query&logoColor=white">
+
+<br>
+
+## ⚙️ 개발 주안점
 
 ### `Builder pattern`
 
 service code를 작성할 때 code의 통일성과 setter의 단점을 보완하기 위해 builder pattern을 이용하였습니다.
 
 ### `Security`
-
 사용자마다 재고, 모니터링, 이벤트 등을 관리함에 따라 로그인/회원가입 기능이 필요했습니다. 데이터 보안을 위해 각 요청에 대해 auth filter를 적용했습니다. 허용된 요청에 대해서만 데이터에 접근할 수 있도록 설정했습니다.
 
 ### `Custom exception handler`
-
 서버에서 발생할 수 있는 예외에 대하여 custom format으로 구성하여 client에게 알려줍니다. project 전역에서 발생하는 에러를 catch하여 일관된 형식으로 쉽게 파악할 수 있습니다.
 
-<br>
+### `Crawling`
+- 농민들을 위한 기사를 제공하기 위해 Jsoup 라이브러리를 이용하여 최근 기사들을 가져와 제공합니다.
 
-## ⚙️ 개발 주안점
+### `Weather API`
+- 외부 API를 사용하여 사용자의 위치와 요청 시간을 기반으로 실시간 날씨 정보를 받아오는 로직을 구현하였습니다.
 
-### [Crawling]
+### `Video streaming`
+- 모니터링 기능에 각 농장의 실시간 현황을 제공하기 위함입니다. 실시간 video를 client에게 streaming하는 service를 구현했습니다.
 
--   농민들을 위한 기사를 제공하기 위해 Jsoup 라이브러리를 이용하여 최근 기사들을 가져와 제공합니다.
-
-### [Weather API]
-
--   외부 API를 사용하여 사용자의 위치와 요청 시간을 기반으로 실시간 날씨 정보를 받아오는 로직을 구현하였습니다.
-
-### [Video streaming]
-
--   모니터링 기능에 각 농장의 실시간 현황을 제공하기 위함입니다. 실시간 video를 client에게 streaming하는 service를 구현했습니다.
-
-### [History]
-
--   스케줄 기록, 조희, 수정, 삭제 등의 기능을 구현했습니다.
+### `History`
+- 스케줄 기록, 조희, 수정, 삭제 등의 기능을 구현했습니다.
 
 <br>
 
