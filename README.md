@@ -6,6 +6,8 @@
 
 -   _배포 server URL : https://port-0-farminpalmserver-m1bow3hn7b1c4b46.sel4.cloudtype.app_
 
+-   _시연 영상 : https://www.youtube.com/watch?v=5rZ4y66YYeI&feature=youtu.be_
+
 <br>
 
 ## ✨ 프로젝트 소개
